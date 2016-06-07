@@ -30,3 +30,6 @@ Estas configurações estão refletidas no início do ficheiro **connect.php** q
 * connect.php (ligação à BD)
 * simpleaccess.php (ligação e interrogação)
 * pwtpsi.sql (sql para importar a base de dados - opcional)
+
+## Funcionamento
+A página **simpleaccess.php** listará o conteúdo da BD usando diferentes tipos de iteração dos resultados. O script **connect.php** contem o código necessário ao estabelecimento da ligação, instanciando uma variável **myconn** com um objeto de ligação à BD. Este script é incluído em todas as páginas que necessitem de ligação à BD.
