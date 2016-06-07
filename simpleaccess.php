@@ -21,6 +21,7 @@ include 'connect.php';
                 echo ("ok");
             }
 
+echo ("<h1> listagem </h1>");
         // iteração dos resultados : como objetos
         while($registo = $result->fetch_object()) {
             echo "<ul>";
@@ -30,9 +31,10 @@ include 'connect.php';
             echo "</ul>";
         }
 
+
+echo ("<h1> listagem </h1>");
         // necessario 'rebobinar' o resultado
         $result->data_seek(0);
-
         // iteração dos resultados  : como arrays associativos
         while($registo = $result->fetch_assoc()) {
             echo "<ul>";
@@ -42,9 +44,11 @@ include 'connect.php';
             echo "</ul>";
         }
 
+
+
+echo ("<h1> listagem </h1>");
         // necessario 'rebobinar' o resultado
         $result->data_seek(0);
-
 
         // iteração dos resultados :  como associativo ou numérico
         while($registo = $result->fetch_array()) {
